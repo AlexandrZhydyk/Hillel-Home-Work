@@ -15,7 +15,6 @@ Examples :
 def chessboard_squares_under_queen_attack(a, b):
     fields_under_attack = ((b-1) + (a-1)) * a * b
     min_dimen = a if a <= b else b
-    print(f"field {fields_under_attack}")
     for i in range(1, a+1):
         for j in range(1, b+1):
             for n in range(1, min_dimen):

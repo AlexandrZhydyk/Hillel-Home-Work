@@ -14,13 +14,25 @@ Examples:
 """
 
 
+# def order(sentence):
+#     resume_dict = {}
+#     str_arr = sentence.split()
+#     for string in str_arr:
+#         for letter in string:
+#             if letter.isdigit():
+#                 resume_dict[letter] = string
+#                 break
+#     return " ".join(map(lambda x: x[1], sorted(resume_dict.items())))
+
+# def order(sentence):
+#     str_arr = sentence.split()
+#     resume_tuple = tuple(map(lambda x: (sorted(x)[0], x), str_arr))
+#     return " ".join(map(lambda x: x[1], sorted(resume_tuple)))
+
 def order(sentence):
-    resume_dict = {}
-    str_arr = sentence.split()
-    for string in str_arr:
-        for letter in string:
-            if letter.isdigit():
-                resume_dict[letter] = string
-                break
-    return " ".join(map(lambda x: x[1], sorted(resume_dict.items())))
+    return " ".join(sorted(sentence.split(), key=lambda x: sorted(x)[0]))
+
+print(order("is2 Thi1s T4est 3a"))
+print(order("4of Fo1r pe6ople g3ood th5e the2"))
+
 
