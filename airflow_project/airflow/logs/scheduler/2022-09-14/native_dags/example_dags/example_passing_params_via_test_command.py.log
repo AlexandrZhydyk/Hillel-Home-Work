@@ -1,0 +1,97 @@
+[2022-09-14T12:40:39.426+0300] {processor.py:153} INFO - Started process (PID=18785) to work on /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:40:39.429+0300] {processor.py:640} INFO - Processing file /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-09-14T12:40:39.430+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:40:39.430+0300] {dagbag.py:508} INFO - Filling up the DagBag from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:40:39.478+0300] {processor.py:650} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:40:39.605+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:40:39.605+0300] {manager.py:508} INFO - Created Permission View: can edit on DAG:example_passing_params_via_test_command
+[2022-09-14T12:40:39.633+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:40:39.633+0300] {manager.py:508} INFO - Created Permission View: can read on DAG:example_passing_params_via_test_command
+[2022-09-14T12:40:39.649+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:40:39.649+0300] {manager.py:508} INFO - Created Permission View: can delete on DAG:example_passing_params_via_test_command
+[2022-09-14T12:40:39.650+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:40:39.649+0300] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-14T12:40:39.660+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:40:39.660+0300] {dag.py:2448} INFO - Creating ORM DAG for example_passing_params_via_test_command
+[2022-09-14T12:40:39.681+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:40:39.681+0300] {dag.py:2977} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-09-14T09:39:00+00:00, run_after=2022-09-14T09:40:00+00:00
+[2022-09-14T12:40:39.705+0300] {processor.py:161} INFO - Processing /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.285 seconds
+[2022-09-14T12:41:17.508+0300] {processor.py:153} INFO - Started process (PID=18898) to work on /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:41:17.512+0300] {processor.py:640} INFO - Processing file /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-09-14T12:41:17.514+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:41:17.514+0300] {dagbag.py:508} INFO - Filling up the DagBag from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:41:17.550+0300] {processor.py:650} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:41:17.567+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:41:17.567+0300] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-14T12:41:17.593+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:41:17.592+0300] {dag.py:2977} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-09-14T09:40:00+00:00, run_after=2022-09-14T09:41:00+00:00
+[2022-09-14T12:41:17.616+0300] {processor.py:161} INFO - Processing /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.116 seconds
+[2022-09-14T12:41:52.919+0300] {processor.py:153} INFO - Started process (PID=18990) to work on /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:41:52.924+0300] {processor.py:640} INFO - Processing file /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-09-14T12:41:52.926+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:41:52.925+0300] {dagbag.py:508} INFO - Filling up the DagBag from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:41:52.957+0300] {processor.py:650} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:41:52.975+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:41:52.975+0300] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-14T12:41:52.998+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:41:52.998+0300] {dag.py:2977} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-09-14T09:40:00+00:00, run_after=2022-09-14T09:41:00+00:00
+[2022-09-14T12:41:53.022+0300] {processor.py:161} INFO - Processing /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.111 seconds
+[2022-09-14T12:42:27.606+0300] {processor.py:153} INFO - Started process (PID=19079) to work on /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:42:27.610+0300] {processor.py:640} INFO - Processing file /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-09-14T12:42:27.611+0300] {logging_mixin.py:115} INFO - [2022-09-14T12:42:27.610+0300] {dagbag.py:508} INFO - Filling up the DagBag from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:42:27.641+0300] {processor.py:650} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-09-14T12:42:28.712+0300] {processor.py:164} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 719, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: serialized_dag
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 155, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 659, in process_file
+    dagbag.sync_to_db()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/models/dagbag.py", line 616, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/models/dagbag.py", line 628, in sync_to_db
+    serialize_errors.extend(_serialize_dag_capturing_errors(dag, session))
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/models/dagbag.py", line 599, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/models/serialized_dag.py", line 145, in write_dag
+    .first()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2810, in first
+    return self.limit(1)._iter().first()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2894, in _iter
+    result = self.session.execute(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1614, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1481, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 719, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: serialized_dag
+[SQL: SELECT ? AS anon_1 
+FROM serialized_dag 
+WHERE serialized_dag.dag_id = ? AND serialized_dag.last_updated > ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 'example_passing_params_via_test_command', '2022-09-14 09:41:58.690690', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

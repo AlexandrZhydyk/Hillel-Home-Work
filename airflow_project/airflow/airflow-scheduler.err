@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/lockfile/pidlockfile.py", line 77, in acquire
+    write_pid_to_pidfile(self.path)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/lockfile/pidlockfile.py", line 161, in write_pid_to_pidfile
+    pidfile_f[2022-09-14 13:15:14 +0300] [19120] [INFO] Worker exiting (pid: 19120)
+[2022-09-14 13:15:14 +0300] [19119] [INFO] Worker exiting (pid: 19119)
+[2022-09-14 13:15:14 +0300] [19118] [INFO] Handling signal: term
+[2022-09-14 13:15:14 +0300] [19118] [INFO] Shutting down: Master
+):
+  File "/home/alex/code/Hillel_Homework/airflow_project/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/__main__.py", line 38, in main
+    args.func(args)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/cli/commands/scheduler_command.py", line 70, in scheduler
+    with ctx:
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/daemon/daemon.py", line 365, in __enter__
+    self.open()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/daemon/daemon.py", line 357, in open
+    self.pidfile.__enter__()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/lockfile/__init__.py", line 197, in __enter__
+    self.acquire()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/daemon/pidfile.py", line 49, in acquire
+    super().acquire(timeout, *args, **kwargs)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/lockfile/pidlockfile.py", line 87, in acquire
+    raise AlreadyLocked("%s is already locked" %
+lockfile.AlreadyLocked: /home/alex/code/Hillel_Homework/airflow_project/airflow/airflow-scheduler.pid is already locked

@@ -1,0 +1,131 @@
+2022-09-14 12:40:14,093 INFO - Starting the scheduler
+2022-09-14 12:40:14,094 INFO - Processing each file at most -1 times
+2022-09-14 12:40:14,097 INFO - Loaded executor: SequentialExecutor
+2022-09-14 12:40:14,102 INFO - Launched DagFileProcessorManager with pid: 18698
+2022-09-14 12:40:14,103 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 12:40:14,109 INFO - Configured default timezone Timezone('UTC')
+2022-09-14 12:42:29,218 ERROR - Exception when executing SchedulerJob._run_scheduler_loop
+Traceback (most recent call last):
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 719, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: dag.root_dag_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/jobs/scheduler_job.py", line 752, in _execute
+    self._run_scheduler_loop()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/jobs/scheduler_job.py", line 840, in _run_scheduler_loop
+    num_queued_tis = self._do_scheduling(session)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/jobs/scheduler_job.py", line 912, in _do_scheduling
+    self._create_dagruns_for_dags(guard, session)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/utils/retries.py", line 76, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/utils/retries.py", line 85, in wrapped_function
+    return func(*args, **kwargs)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/jobs/scheduler_job.py", line 980, in _create_dagruns_for_dags
+    self._create_dag_runs(query.all(), session)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2759, in all
+    return self._iter().all()
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2894, in _iter
+    result = self.session.execute(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1614, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1481, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 719, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: dag.root_dag_id
+[SQL: SELECT dag.dag_id AS dag_dag_id, dag.root_dag_id AS dag_root_dag_id, dag.is_paused AS dag_is_paused, dag.is_subdag AS dag_is_subdag, dag.is_active AS dag_is_active, dag.last_parsed_time AS dag_last_parsed_time, dag.last_pickled AS dag_last_pickled, dag.last_expired AS dag_last_expired, dag.scheduler_lock AS dag_scheduler_lock, dag.pickle_id AS dag_pickle_id, dag.fileloc AS dag_fileloc, dag.owners AS dag_owners, dag.description AS dag_description, dag.default_view AS dag_default_view, dag.schedule_interval AS dag_schedule_interval, dag.timetable_description AS dag_timetable_description, dag.max_active_tasks AS dag_max_active_tasks, dag.max_active_runs AS dag_max_active_runs, dag.has_task_concurrency_limits AS dag_has_task_concurrency_limits, dag.has_import_errors AS dag_has_import_errors, dag.next_dagrun AS dag_next_dagrun, dag.next_dagrun_data_interval_start AS dag_next_dagrun_data_interval_start, dag.next_dagrun_data_interval_end AS dag_next_dagrun_data_interval_end, dag.next_dagrun_create_after AS dag_next_dagrun_create_after 
+FROM dag 
+WHERE dag.is_paused = 0 AND dag.is_active = 1 AND dag.has_import_errors = 0 AND dag.next_dagrun_create_after <= CURRENT_TIMESTAMP ORDER BY dag.next_dagrun_create_after
+ LIMIT ? OFFSET ?]
+[parameters: (10, 0)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-09-14 12:42:30,267 INFO - Sending Signals.SIGTERM to group 18698. PIDs of all processes in the group: [18698]
+2022-09-14 12:42:30,268 INFO - Sending the signal Signals.SIGTERM to group 18698
+2022-09-14 12:42:30,481 INFO - Process psutil.Process(pid=18698, status='terminated', exitcode=0, started='12:40:13') (18698) terminated with exit code 0
+2022-09-14 12:42:30,482 INFO - Exited execute loop
+2022-09-14 12:43:19,526 INFO - Starting the scheduler
+2022-09-14 12:43:19,527 INFO - Processing each file at most -1 times
+2022-09-14 12:43:19,530 INFO - Loaded executor: SequentialExecutor
+2022-09-14 12:43:19,534 INFO - Launched DagFileProcessorManager with pid: 19121
+2022-09-14 12:43:19,536 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 12:43:19,540 INFO - Configured default timezone Timezone('UTC')
+2022-09-14 12:48:20,469 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 12:53:20,608 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 12:58:20,727 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 13:00:50,067 INFO - 1 tasks up for execution:
+	<TaskInstance: etl_dag.get_data manual__2022-09-14T10:00:48.958748+00:00 [scheduled]>
+2022-09-14 13:00:50,067 INFO - DAG etl_dag has 0/16 running and queued tasks
+2022-09-14 13:00:50,067 INFO - Setting the following tasks to queued state:
+	<TaskInstance: etl_dag.get_data manual__2022-09-14T10:00:48.958748+00:00 [scheduled]>
+2022-09-14 13:00:50,070 INFO - Sending TaskInstanceKey(dag_id='etl_dag', task_id='get_data', run_id='manual__2022-09-14T10:00:48.958748+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2022-09-14 13:00:50,070 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'etl_dag', 'get_data', 'manual__2022-09-14T10:00:48.958748+00:00', '--local', '--subdir', 'DAGS_FOLDER/my_dag.py']
+2022-09-14 13:00:50,084 INFO - Executing command: ['airflow', 'tasks', 'run', 'etl_dag', 'get_data', 'manual__2022-09-14T10:00:48.958748+00:00', '--local', '--subdir', 'DAGS_FOLDER/my_dag.py']
+2022-09-14 13:01:45,280 INFO - Executor reports execution of etl_dag.get_data run_id=manual__2022-09-14T10:00:48.958748+00:00 exited with status success for try_number 1
+2022-09-14 13:01:45,288 INFO - TaskInstance Finished: dag_id=etl_dag, task_id=get_data, run_id=manual__2022-09-14T10:00:48.958748+00:00, map_index=-1, run_start_date=2022-09-14 10:00:51.672928+00:00, run_end_date=2022-09-14 10:01:44.847136+00:00, run_duration=53.174208, state=success, executor_state=success, try_number=1, max_tries=0, job_id=3, pool=default_pool, queue=default, priority_weight=3, operator=_PythonDecoratedOperator, queued_dttm=2022-09-14 10:00:50.067986+00:00, queued_by_job_id=2, pid=20781
+2022-09-14 13:01:45,299 ERROR - DagFileProcessorManager (PID=19121) last sent a heartbeat 55.39 seconds ago! Restarting it
+2022-09-14 13:01:45,325 INFO - Sending Signals.SIGTERM to group 19121. PIDs of all processes in the group: [19121]
+2022-09-14 13:01:45,326 INFO - Sending the signal Signals.SIGTERM to group 19121
+2022-09-14 13:01:45,540 INFO - Process psutil.Process(pid=19121, status='terminated', exitcode=0, started='12:43:19') (19121) terminated with exit code 0
+2022-09-14 13:01:45,550 INFO - Launched DagFileProcessorManager with pid: 20849
+2022-09-14 13:01:45,565 INFO - Configured default timezone Timezone('UTC')
+2022-09-14 13:01:46,106 INFO - 1 tasks up for execution:
+	<TaskInstance: etl_dag.get_result manual__2022-09-14T10:00:48.958748+00:00 [scheduled]>
+2022-09-14 13:01:46,106 INFO - DAG etl_dag has 0/16 running and queued tasks
+2022-09-14 13:01:46,107 INFO - Setting the following tasks to queued state:
+	<TaskInstance: etl_dag.get_result manual__2022-09-14T10:00:48.958748+00:00 [scheduled]>
+2022-09-14 13:01:46,108 INFO - Sending TaskInstanceKey(dag_id='etl_dag', task_id='get_result', run_id='manual__2022-09-14T10:00:48.958748+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-09-14 13:01:46,109 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'etl_dag', 'get_result', 'manual__2022-09-14T10:00:48.958748+00:00', '--local', '--subdir', 'DAGS_FOLDER/my_dag.py']
+2022-09-14 13:01:46,116 INFO - Executing command: ['airflow', 'tasks', 'run', 'etl_dag', 'get_result', 'manual__2022-09-14T10:00:48.958748+00:00', '--local', '--subdir', 'DAGS_FOLDER/my_dag.py']
+2022-09-14 13:01:49,390 INFO - Executor reports execution of etl_dag.get_result run_id=manual__2022-09-14T10:00:48.958748+00:00 exited with status success for try_number 1
+2022-09-14 13:01:49,395 INFO - TaskInstance Finished: dag_id=etl_dag, task_id=get_result, run_id=manual__2022-09-14T10:00:48.958748+00:00, map_index=-1, run_start_date=2022-09-14 10:01:47.687057+00:00, run_end_date=2022-09-14 10:01:48.958065+00:00, run_duration=1.271008, state=success, executor_state=success, try_number=1, max_tries=0, job_id=4, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2022-09-14 10:01:46.107581+00:00, queued_by_job_id=2, pid=20857
+2022-09-14 13:01:49,445 INFO - 1 tasks up for execution:
+	<TaskInstance: etl_dag.print_result manual__2022-09-14T10:00:48.958748+00:00 [scheduled]>
+2022-09-14 13:01:49,445 INFO - DAG etl_dag has 0/16 running and queued tasks
+2022-09-14 13:01:49,445 INFO - Setting the following tasks to queued state:
+	<TaskInstance: etl_dag.print_result manual__2022-09-14T10:00:48.958748+00:00 [scheduled]>
+2022-09-14 13:01:49,447 INFO - Sending TaskInstanceKey(dag_id='etl_dag', task_id='print_result', run_id='manual__2022-09-14T10:00:48.958748+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-09-14 13:01:49,447 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'etl_dag', 'print_result', 'manual__2022-09-14T10:00:48.958748+00:00', '--local', '--subdir', 'DAGS_FOLDER/my_dag.py']
+2022-09-14 13:01:49,455 INFO - Executing command: ['airflow', 'tasks', 'run', 'etl_dag', 'print_result', 'manual__2022-09-14T10:00:48.958748+00:00', '--local', '--subdir', 'DAGS_FOLDER/my_dag.py']
+2022-09-14 13:01:51,681 INFO - Executor reports execution of etl_dag.print_result run_id=manual__2022-09-14T10:00:48.958748+00:00 exited with status success for try_number 1
+2022-09-14 13:01:51,686 INFO - TaskInstance Finished: dag_id=etl_dag, task_id=print_result, run_id=manual__2022-09-14T10:00:48.958748+00:00, map_index=-1, run_start_date=2022-09-14 10:01:50.973250+00:00, run_end_date=2022-09-14 10:01:51.203066+00:00, run_duration=0.229816, state=success, executor_state=success, try_number=1, max_tries=0, job_id=5, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2022-09-14 10:01:49.446028+00:00, queued_by_job_id=2, pid=20865
+2022-09-14 13:01:51,737 INFO - Marking run <DagRun etl_dag @ 2022-09-14 10:00:48.958748+00:00: manual__2022-09-14T10:00:48.958748+00:00, state:running, queued_at: 2022-09-14 10:00:48.976885+00:00. externally triggered: True> successful
+2022-09-14 13:01:51,738 INFO - DagRun Finished: dag_id=etl_dag, execution_date=2022-09-14 10:00:48.958748+00:00, run_id=manual__2022-09-14T10:00:48.958748+00:00, run_start_date=2022-09-14 10:00:49.976355+00:00, run_end_date=2022-09-14 10:01:51.738159+00:00, run_duration=61.761804, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-09-14 10:00:48.958748+00:00, data_interval_end=2022-09-14 10:00:48.958748+00:00, dag_hash=22e6737f676aaf8539608e1f8ffdd411
+2022-09-14 13:01:51,741 INFO - Setting next_dagrun for etl_dag to None, run_after=None
+2022-09-14 13:03:20,811 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 13:08:20,883 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 13:13:20,975 INFO - Resetting orphaned tasks for active dag runs
+2022-09-14 13:15:14,039 INFO - Exiting gracefully upon receiving signal 15
+2022-09-14 13:15:14,550 INFO - Sending Signals.SIGTERM to group 20849. PIDs of all processes in the group: []
+2022-09-14 13:15:14,551 INFO - Sending the signal Signals.SIGTERM to group 20849
+2022-09-14 13:15:14,551 INFO - Sending the signal Signals.SIGTERM to process 20849 as process group is missing.
+2022-09-14 13:15:14,561 INFO - Sending Signals.SIGTERM to group 20849. PIDs of all processes in the group: []
+2022-09-14 13:15:14,562 INFO - Sending the signal Signals.SIGTERM to group 20849
+2022-09-14 13:15:14,562 INFO - Sending the signal Signals.SIGTERM to process 20849 as process group is missing.
+2022-09-14 13:15:14,562 INFO - Exited execute loop

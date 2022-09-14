@@ -1,0 +1,650 @@
+[2022-09-14T12:40:14.131+0300] {manager.py:480} INFO - Processing files using up to 1 processes at a time 
+[2022-09-14T12:40:14.132+0300] {manager.py:481} INFO - Process each file at most once every 30 seconds
+[2022-09-14T12:40:14.132+0300] {manager.py:482} INFO - Checking for new files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags every 300 seconds
+[2022-09-14T12:40:14.133+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:40:14.171+0300] {manager.py:712} INFO - There are 34 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:40:14.317+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2022-09-14T09:40:14
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0
+================================================================================
+[2022-09-14T12:40:44.829+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.11s           2022-09-14T09:40:32
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.11s           2022-09-14T09:40:33
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 0           0
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2022-09-14T09:40:14
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.11s           2022-09-14T09:40:15
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.31s           2022-09-14T09:40:16
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.31s           2022-09-14T09:40:42
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.31s           2022-09-14T09:40:31
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.31s           2022-09-14T09:40:19
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              1           0  0.41s           2022-09-14T09:40:20
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.31s           2022-09-14T09:40:24
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.31s           2022-09-14T09:40:43
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.31s           2022-09-14T09:40:24
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.31s           2022-09-14T09:40:26
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.31s           2022-09-14T09:40:27
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.31s           2022-09-14T09:40:44
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.21s           2022-09-14T09:40:34
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.41s           2022-09-14T09:40:22
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.31s           2022-09-14T09:40:28
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.31s           2022-09-14T09:40:35
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.31s           2022-09-14T09:40:36
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.31s           2022-09-14T09:40:38
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.31s           2022-09-14T09:40:29
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.32s           2022-09-14T09:40:39
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.21s           2022-09-14T09:40:40
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.32s           2022-09-14T09:40:30
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.51s           2022-09-14T09:40:18
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.41s           2022-09-14T09:40:23
+================================================================================
+[2022-09-14T12:41:15.147+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.31s           2022-09-14T09:41:12
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.11s           2022-09-14T09:41:12
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.11s           2022-09-14T09:40:54
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.11s           2022-09-14T09:40:56
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.21s           2022-09-14T09:40:56
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.31s           2022-09-14T09:40:42
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.11s           2022-09-14T09:41:11
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.11s           2022-09-14T09:40:59
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              1           0  0.21s           2022-09-14T09:41:00
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.11s           2022-09-14T09:41:03
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.31s           2022-09-14T09:40:43
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.21s           2022-09-14T09:41:04
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.10s           2022-09-14T09:41:05
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.21s           2022-09-14T09:41:06
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.31s           2022-09-14T09:40:44
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.31s           2022-09-14T09:40:47
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.21s           2022-09-14T09:41:13
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.11s           2022-09-14T09:41:01
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.21s           2022-09-14T09:41:07
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.31s           2022-09-14T09:40:49
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.31s           2022-09-14T09:40:50
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.10s           2022-09-14T09:41:15
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.31s           2022-09-14T09:40:36
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.31s           2022-09-14T09:40:38
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.21s           2022-09-14T09:40:52
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.11s           2022-09-14T09:41:08
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.32s           2022-09-14T09:40:39
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.21s           2022-09-14T09:40:40
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.21s           2022-09-14T09:41:09
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.31s           2022-09-14T09:40:54
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.21s           2022-09-14T09:40:58
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.41s           2022-09-14T09:40:46
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  2           0  0.31s           2022-09-14T09:40:51
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.21s           2022-09-14T09:41:02
+================================================================================
+[2022-09-14T12:41:45.413+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.31s           2022-09-14T09:41:12
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.11s           2022-09-14T09:41:12
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.11s           2022-09-14T09:41:29
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.11s           2022-09-14T09:41:30
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.31s           2022-09-14T09:41:31
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.21s           2022-09-14T09:41:19
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.11s           2022-09-14T09:41:45
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.21s           2022-09-14T09:41:33
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              1           0  0.21s           2022-09-14T09:41:34
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.21s           2022-09-14T09:41:38
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.10s           2022-09-14T09:41:20
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.21s           2022-09-14T09:41:38
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.12s           2022-09-14T09:41:40
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.21s           2022-09-14T09:41:41
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.21s           2022-09-14T09:41:21
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2022-09-14T09:41:23
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.21s           2022-09-14T09:41:13
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.21s           2022-09-14T09:41:35
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.21s           2022-09-14T09:41:42
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.10s           2022-09-14T09:41:24
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.11s           2022-09-14T09:41:25
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.10s           2022-09-14T09:41:15
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.11s           2022-09-14T09:41:15
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.11s           2022-09-14T09:41:16
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.11s           2022-09-14T09:41:27
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.12s           2022-09-14T09:41:43
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.21s           2022-09-14T09:41:17
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.11s           2022-09-14T09:41:17
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.21s           2022-09-14T09:41:44
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.21s           2022-09-14T09:41:28
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.22s           2022-09-14T09:41:32
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.21s           2022-09-14T09:41:22
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  2           0  0.10s           2022-09-14T09:41:26
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.31s           2022-09-14T09:41:37
+================================================================================
+[2022-09-14T12:42:15.746+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                 0           0  0.10s           2022-09-14T09:41:45
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       0           0  0.11s           2022-09-14T09:41:47
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.11s           2022-09-14T09:42:05
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.11s           2022-09-14T09:42:06
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.21s           2022-09-14T09:42:07
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.21s           2022-09-14T09:41:54
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.11s           2022-09-14T09:41:45
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.21s           2022-09-14T09:42:09
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              1           0  0.12s           2022-09-14T09:42:10
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.11s           2022-09-14T09:42:14
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.11s           2022-09-14T09:41:55
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.21s           2022-09-14T09:42:15
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.21s           2022-09-14T09:42:15
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.21s           2022-09-14T09:41:41
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.21s           2022-09-14T09:41:57
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.21s           2022-09-14T09:41:59
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.21s           2022-09-14T09:41:48
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.11s           2022-09-14T09:42:11
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.21s           2022-09-14T09:41:42
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.21s           2022-09-14T09:42:00
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.12s           2022-09-14T09:42:00
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.21s           2022-09-14T09:41:49
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.13s           2022-09-14T09:41:50
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.11s           2022-09-14T09:41:51
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.11s           2022-09-14T09:42:03
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.12s           2022-09-14T09:41:43
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.21s           2022-09-14T09:41:53
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.11s           2022-09-14T09:41:54
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                   1           0  0.21s           2022-09-14T09:41:44
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                 1           0  0.11s           2022-09-14T09:42:04
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.21s           2022-09-14T09:42:08
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.21s           2022-09-14T09:41:58
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  2           0  0.21s           2022-09-14T09:42:01
+/home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.30s           2022-09-14T09:42:12
+================================================================================
+[2022-09-14T12:42:28.804+0300] {manager.py:943} ERROR - Processor for /home/alex/code/Hillel_Homework/airflow_project/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py exited with return code 1.
+[2022-09-14T12:42:30.268+0300] {manager.py:462} INFO - Exiting gracefully upon receiving signal 15
+[2022-09-14T12:43:19.566+0300] {manager.py:480} INFO - Processing files using up to 1 processes at a time 
+[2022-09-14T12:43:19.567+0300] {manager.py:481} INFO - Process each file at most once every 30 seconds
+[2022-09-14T12:43:19.567+0300] {manager.py:482} INFO - Checking for new files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags every 300 seconds
+[2022-09-14T12:43:19.567+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:43:19.568+0300] {manager.py:712} INFO - There are 0 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:48:19.578+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:48:19.580+0300] {manager.py:712} INFO - There are 1 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:48:20.725+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.81s           2022-09-14T09:48:20
+================================================================================
+[2022-09-14T12:48:51.543+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.71s           2022-09-14T09:48:51
+================================================================================
+[2022-09-14T12:49:22.199+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:49:22
+================================================================================
+[2022-09-14T12:49:52.806+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:49:52
+================================================================================
+[2022-09-14T12:50:23.664+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.71s           2022-09-14T09:50:23
+================================================================================
+[2022-09-14T12:50:54.310+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:50:54
+================================================================================
+[2022-09-14T12:51:24.970+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:51:24
+================================================================================
+[2022-09-14T12:51:55.650+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:51:55
+================================================================================
+[2022-09-14T12:52:26.323+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:52:26
+================================================================================
+[2022-09-14T12:52:56.988+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:52:56
+================================================================================
+[2022-09-14T12:53:20.479+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:53:20.484+0300] {manager.py:712} INFO - There are 1 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:53:27.737+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.62s           2022-09-14T09:53:27
+================================================================================
+[2022-09-14T12:53:58.400+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:53:58
+================================================================================
+[2022-09-14T12:54:29.079+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.52s           2022-09-14T09:54:29
+================================================================================
+[2022-09-14T12:54:59.838+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T09:54:59
+================================================================================
+[2022-09-14T12:55:30.615+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T09:55:30
+================================================================================
+[2022-09-14T12:56:01.336+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:56:01
+================================================================================
+[2022-09-14T12:56:31.978+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.52s           2022-09-14T09:56:31
+================================================================================
+[2022-09-14T12:57:02.626+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:57:02
+================================================================================
+[2022-09-14T12:57:33.392+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T09:57:33
+================================================================================
+[2022-09-14T12:58:04.078+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:58:04
+================================================================================
+[2022-09-14T12:58:20.617+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:58:20.623+0300] {manager.py:712} INFO - There are 1 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T12:58:34.828+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T09:58:34
+================================================================================
+[2022-09-14T12:59:05.601+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T09:59:05
+================================================================================
+[2022-09-14T12:59:36.272+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T09:59:36
+================================================================================
+[2022-09-14T13:00:07.011+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T10:00:07
+================================================================================
+[2022-09-14T13:00:37.639+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T10:00:37
+================================================================================
+[2022-09-14T13:01:45.326+0300] {manager.py:462} INFO - Exiting gracefully upon receiving signal 15
+[2022-09-14T13:01:45.589+0300] {manager.py:480} INFO - Processing files using up to 1 processes at a time 
+[2022-09-14T13:01:45.590+0300] {manager.py:481} INFO - Process each file at most once every 30 seconds
+[2022-09-14T13:01:45.590+0300] {manager.py:482} INFO - Checking for new files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags every 300 seconds
+[2022-09-14T13:01:45.590+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T13:01:45.592+0300] {manager.py:712} INFO - There are 1 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T13:01:46.032+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:01:46
+================================================================================
+[2022-09-14T13:02:17.299+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.52s           2022-09-14T10:02:17
+================================================================================
+[2022-09-14T13:02:48.252+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:02:48
+================================================================================
+[2022-09-14T13:03:18.698+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:03:18
+================================================================================
+[2022-09-14T13:03:49.970+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.40s           2022-09-14T10:03:49
+================================================================================
+[2022-09-14T13:04:21.095+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.42s           2022-09-14T10:04:21
+================================================================================
+[2022-09-14T13:04:52.075+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:04:52
+================================================================================
+[2022-09-14T13:05:22.994+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:05:22
+================================================================================
+[2022-09-14T13:05:53.988+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T10:05:53
+================================================================================
+[2022-09-14T13:06:24.858+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:06:24
+================================================================================
+[2022-09-14T13:06:46.205+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T13:06:46.208+0300] {manager.py:712} INFO - There are 1 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T13:06:55.685+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:06:55
+================================================================================
+[2022-09-14T13:07:26.494+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:07:26
+================================================================================
+[2022-09-14T13:07:57.307+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:07:57
+================================================================================
+[2022-09-14T13:08:28.195+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:08:28
+================================================================================
+[2022-09-14T13:08:58.787+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:08:58
+================================================================================
+[2022-09-14T13:09:29.465+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T10:09:29
+================================================================================
+[2022-09-14T13:10:00.100+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:10:00
+================================================================================
+[2022-09-14T13:10:30.776+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T10:10:30
+================================================================================
+[2022-09-14T13:11:01.635+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T10:11:01
+================================================================================
+[2022-09-14T13:11:32.218+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.42s           2022-09-14T10:11:32
+================================================================================
+[2022-09-14T13:11:46.693+0300] {manager.py:709} INFO - Searching for files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T13:11:46.695+0300] {manager.py:712} INFO - There are 1 files in /home/alex/code/Hillel_Homework/airflow_project/airflow/dags
+[2022-09-14T13:12:03.083+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.61s           2022-09-14T10:12:03
+================================================================================
+[2022-09-14T13:12:33.758+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T10:12:33
+================================================================================
+[2022-09-14T13:13:04.376+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.51s           2022-09-14T10:13:04
+================================================================================
+[2022-09-14T13:13:34.958+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:13:34
+================================================================================
+[2022-09-14T13:14:05.541+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:14:05
+================================================================================
+[2022-09-14T13:14:36.099+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:14:36
+================================================================================
+[2022-09-14T13:15:06.666+0300] {manager.py:828} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/alex/code/Hillel_Homework/airflow_project/airflow/dags/my_dag.py                           1           0  0.41s           2022-09-14T10:15:06
+================================================================================
+[2022-09-14T13:15:14.039+0300] {manager.py:462} INFO - Exiting gracefully upon receiving signal 15
